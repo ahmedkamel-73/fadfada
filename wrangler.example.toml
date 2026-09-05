@@ -1,0 +1,13 @@
+name = "fadfada"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fadfada"
+database_id = "YOUR_D1_DATABASE_ID_HERE"
+
+[vars]
+APP_NAME = "فضفضة"
+JWT_SECRET = "GENERATE_WITH_openssl_rand_-base64_48"
+ADMIN_PHONE = "YOUR_ADMIN_PHONE"
+ADMIN_PASSWORD_HASH = "YOUR_SHA256_HASH"
