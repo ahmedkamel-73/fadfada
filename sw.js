@@ -1,0 +1,1 @@
+const CACHE='fadfada-secure';self.addEventListener('install',e=>self.skipWaiting());

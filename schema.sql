@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS users (phone TEXT PRIMARY KEY, username TEXT UNIQUE, emoji TEXT, points INTEGER DEFAULT 0, role TEXT DEFAULT 'user', created_at INTEGER);
+CREATE TABLE IF NOT EXISTS posts (id TEXT PRIMARY KEY, authorPhone TEXT, author TEXT, emoji TEXT, text TEXT, phase TEXT, likes INTEGER DEFAULT 0, hearts INTEGER DEFAULT 0, coffees INTEGER DEFAULT 0, likedBy TEXT DEFAULT '[]', heartedBy TEXT DEFAULT '[]', coffeedBy TEXT DEFAULT '[]', timestamp INTEGER, isSehhar INTEGER DEFAULT 0);
+CREATE TABLE IF NOT EXISTS withdrawals (id TEXT PRIMARY KEY, phone TEXT, username TEXT, amount INTEGER, points INTEGER, status TEXT DEFAULT 'pending', date INTEGER);
+CREATE TABLE IF NOT EXISTS ads (slot TEXT PRIMARY KEY, enabled INTEGER, type TEXT, label TEXT, html TEXT, updated_at INTEGER);

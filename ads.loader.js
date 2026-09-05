@@ -1,0 +1,1 @@
+window.FADFADA_ADS={init(){}, renderAll(){}};
