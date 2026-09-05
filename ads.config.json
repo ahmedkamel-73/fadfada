@@ -1,0 +1,10 @@
+{
+  "app_name": "فضفضة",
+  "slots": {
+    "top_feed": {
+      "enabled": true,
+      "type": "custom",
+      "html": "<div>إعلان فضفضة</div>"
+    }
+  }
+}

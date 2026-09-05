@@ -1,0 +1,1 @@
+{"name": "fadfada", "version": "2.1.0", "scripts": {"dev": "wrangler pages dev . --d1=DB"}}
