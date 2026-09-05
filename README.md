@@ -1,18 +1,33 @@
-# فضفضة - تشفير كلمات السر + JWT - مع الإبقاء على كل شيء كما هو
+# فضفضة 2026 - إدارة إعلانات من لوحة التحكم 🛡️
 
-## ما تم تعديله فقط:
-1. تشفير كلمات السر SHA256 (Web Crypto API) - لا يوجد تخزين نصي
-2. إضافة JWT (HMAC-SHA256) - 30 يوم صلاحية - Bearer token
+## الجديد: الأدمن يقدر يحط كود أي شركة إعلانات من لوحة التحكم مباشرة
 
-## ما لم يتم تغييره (كما طلبت):
-- اسم التطبيق: فضفضة
-- الإعلانات: نظام عام أي شركة (ads.config.json + ads.loader.js + /api/ads)
-- الشكل الفاخر 3D + 4 مراحل + كلمة فضفضة 8م
-- إخفاء الأرقام + PWA + نقط + محفظة + سهرانين + لوحة أدمن + إدارة إعلانات من لوحة التحكم
+### كيف؟
+1. ادخل كـ أدمن: 01013200000 / 132000aA*
+2. افتح لوحة التحكم 🛡️
+3. هتلاقي قسم "📢 إدارة الإعلانات - أي شركة"
+4. لكل مكان (top_feed, feed_every_5, wallet_banner, login_banner):
+   - حط كود الإعلان (HTML, AdSense, Ezoic, صورة, iframe - أي شركة)
+   - اضغط حفظ
+   - الإعلان يظهر فوراً في الموقع بدون deploy
 
-## Secrets جاهزة ومشفرة
-JWT_SECRET = oOxRyb1FX1lk-1EOhgscUuExDqotPXv9_RchYi6KAWm8Hh4ee5MR_4MjxnHD_6wM
-ADMIN_PASSWORD_HASH = 82a10f2ca79e1d9740da9c7b49b26eeee57c78c04f7fb4eb9c7c3d618392e5e4 (SHA256 لـ 132000aA*)
+### أمثلة أكواد:
+- AdSense: <ins class="adsbygoogle" ...></ins>
+- Ezoic: <div id="ezoic-pub-ad-placeholder-101"></div>
+- صورة: <a href="..."><img src="..."></a>
+- HTML مخصص: <div style="...">إعلانك</div>
+- iframe: <iframe src="https://ad-network.com"></iframe>
 
-## ملاحظة
-كل الملفات الأخرى بقيت كما هي - لم يتم حذف أي ميزة.
+### Secrets جاهزة
+JWT: fC62wr3dNa-sym3NxEHC...
+ADMIN_HASH: 82a10f2ca79e1d9740da...
+Admin: 01013200000 / 132000aA*
+
+### DB
+- ads table جديد - يحفظ الإعلانات
+- schema.sql محدث
+
+### نشر
+npm install
+npx wrangler d1 execute fadfada --file=schema.sql
+npm run deploy

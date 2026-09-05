@@ -1,1 +1,1 @@
-const CACHE='fadfada-secure';self.addEventListener('install',e=>self.skipWaiting());
+const CACHE='fadfada-v2';self.addEventListener('install',e=>self.skipWaiting());

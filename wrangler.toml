@@ -4,9 +4,8 @@ compatibility_date = "2024-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "fadfada"
-database_id = "REPLACE_WITH_YOUR_D1_ID"
+database_id = "ce522ce9-0bcb-4240-b25a-d3d7178c8dd7"
 [vars]
-APP_NAME = "فضفضة"
-JWT_SECRET = "oOxRyb1FX1lk-1EOhgscUuExDqotPXv9_RchYi6KAWm8Hh4ee5MR_4MjxnHD_6wM"
+JWT_SECRET = "fC62wr3dNa-sym3NxEHCHmtc_n1of069HABsGjtx1dLJrN1BGwdBcKWgbe-ZvZKY"
 ADMIN_PHONE = "01013200000"
 ADMIN_PASSWORD_HASH = "82a10f2ca79e1d9740da9c7b49b26eeee57c78c04f7fb4eb9c7c3d618392e5e4"
