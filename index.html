@@ -49,7 +49,6 @@ function renderAll(){const logged=!!currentUser;document.getElementById('loginMo
 setInterval(()=>{updateTheme()},1000);renderAll();updateTheme();
 async function loadPosts(){try{if(location.hostname.includes('pages.dev')){const t=localStorage.getItem('lametna_token_v3');const r=await fetch('/api/posts',{headers:{...(t?{Authorization:`Bearer ${t}`}:{})}});if(r.ok){const d=await r.json();posts=d.map(p=>({...p,likedBy:JSON.parse(p.likedBy||'[]'),heartedBy:JSON.parse(p.heartedBy||'[]'),coffeedBy:JSON.parse(p.coffeedBy||'[]')}));save();renderPosts()}}}catch(e){}}
 loadPosts();loadAds();
-);}
 </script>
 <script>
 (function(){
