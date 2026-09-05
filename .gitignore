@@ -1,29 +1,7 @@
-# Cloudflare
 .wrangler/
 .dev.vars
-.dev.vars.*
-
-# Dependencies
 node_modules/
-package-lock.json
-yarn.lock
-
-# Environment
 .env
-.env.local
-.env.development.local
-
-# OS
 .DS_Store
-Thumbs.db
 *.log
-
-# IDE
 .vscode/
-.idea/
-*.swp
-
-# Build
-dist/
-build/
-.cache/
